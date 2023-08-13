@@ -1,0 +1,289 @@
+.myBtnContainer{
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  .sidebar {
+    flex: 1;
+    background-color: #f5f6fa;
+    padding: 10px;
+  }
+ 
+  .sub1 input[type="text"] {
+    padding: 5px 5px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .sub1 h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .sub1 ul {
+    list-style: none;
+  }
+  .sub1 ul li {
+   
+    margin: 5px 0;
+    padding-left: 5px;
+    cursor: pointer;
+    
+  }
+  .sub1 ul li:hover {
+    background-color: #dcdde1;
+  }
+  .content {
+    flex: 4;
+  }
+
+  .filter{
+   padding-top: 100px;
+    width: 250px;
+    height: 500px;
+  }
+  .navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(60, 164, 60);
+    color: #fff;
+  }
+  
+  .nav-links a {
+    color: #fff;
+  }
+  
+  /* LOGO */
+  .logo {
+    font-size: 32px;
+  }
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  
+  /* DROPDOWN MENU */
+  .services {
+    position: relative; 
+  }
+  
+  .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  
+  .dropdown li + li {
+    margin-top: 10px;
+  }
+  
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+  }
+  
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+  
+  .services:hover .dropdown {
+    display: block;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+.sub1{
+    background-color: white;
+   float: left;
+   width: 300px;
+   height: 700px;
+}
+.sub2{
+    float:left;
+    height: 750px;
+}
+.sub3{
+  float: left;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 30px;
+  height: 300px;
+  
+  margin-top: 150px;
+  margin-left: 100px;
+}
+.gh{
+    margin-top: 40px;
+    margin-left: 10px;
+    height: 750px;
+}
+.products {
+  margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    margin-bottom: 10px;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .productcard {
+    padding: 2%;
+    flex-grow: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-basis: 16%;
+    
+    display: flex; /* so child elements can use flexbox stuff too! */
+  }
+
+  .product-card {
+    flex: 1 16%;
+  }
+  .product-image img {
+    max-width: 100%;
+  }
+
+  .xc{
+    margin-left: 10px ;
+    margin-top : 30px ;
+    background-color: darkgray;
+    height: 100px;
+    width: 1000px;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#090a08;
+    color: white;
+    text-align: center;
+  }
+
+  .filter{
+    width: 200px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+  .xc2{
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+.ad1{
+  margin-top: 20px;
+  display: flex;
+  background-color: rgb(155, 226, 155);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 2px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.imgh{
+  float: left;
+}
+.text{
+  float: left;
+}
+.cross{
+  float:left
+}

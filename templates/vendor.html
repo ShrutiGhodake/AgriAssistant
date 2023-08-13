@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/vendor_style.css') }}">
+  <link rel="stylesheet" href="vendor_style (1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+
+    <nav class="navbar">    
+  <!-- LOGO -->
+  <div class="logo">AgriAssistance</div>
+
+  <!-- NAVIGATION MENU -->
+  <ul class="nav-links">
+
+
+    <!-- NAVIGATION MENUS -->
+    <div class="menu">
+
+       <li><a href="/">HOME</a></li>
+      <li><a href="/">ABOUT</a></li>
+
+      <li class="services">
+        <a href="/">FAQs</a>
+
+        <!-- DROPDOWN MENU -->
+    
+
+      </li>
+
+      <li><a href="register.html">REGISTER</a></li>
+      <li><a href="/">Contact</a></li>
+    </div>
+  </ul>
+</nav>
+      
+
+      <div class="main">
+      
+
+        
+
+        <div class="sub2">
+            
+            <div class="xc2">
+                <center><h2>Fertilizers</h2></center>
+            </div>
+            <div class="gh">
+            <section class="products">
+
+                <!-- It's likely you'll need to link the card somewhere. You could add a button in the info, link the titles, or even wrap the entire card in an <a href="..."> -->
+              
+                <div class="productcard moong">
+                  <div class="product-image moong1">
+                    <img src="{{ url_for('static', filename='images/ferti4.jpg') }}" width="140px" height="100px">
+                  
+                    <h5>TrustBasket Neem Fertilizer</h5>
+                    <h6>200₹ </h6>
+                    <button type="button" style="border: none; background-color: #9ACD32; border-radius: 5px;" onclick="addToCart('Moong', '200₹ 1kg')">Add to Cart</button>
+                  </div>
+                </div>
+
+                <div class="productcard tur">
+                    <div class="product-image tur1">
+                      <img src="{{ url_for('static', filename='images/ferti5.jpg') }}" width="140px" height="100px">
+                   
+                      <h5> Dr Neem+ CakePowder/Neem Khali </h5>
+                      <h6>199₹ 1kg</h6>
+                      <button type="button" style="border: none; background-color: #9ACD32; border-radius: 5px;" onclick="addToCart('Tur', '174₹ 1kg')">Add to Cart</button>
+                    </div>
+                  </div>
+
+                  <div class="productcard moong">
+                    <div class="product-image moong2">
+                      <img src="{{ url_for('static', filename='images/ferti6.jpg') }}" width="140px" height="100px">
+                   
+                      <h5>Bone Meal Powder</h5>
+                      <h6>160₹</h6>
+                      <button type="button" style="border: none; background-color: #9ACD32; border-radius: 5px;" onclick="addToCart('Moong', '200₹ 1kg')">Add to Cart</button>
+                    </div>
+                  </div>
+
+                  <div class="productcard vegetable">
+                    <div class="product-image vegetable1">
+                      <img src="{{ url_for('static', filename='images/ferti7.jpg') }}" width="140px" height="100px">
+                   
+                      <h5>Ugaoo Bone Meal</h5>
+                      <h6>300₹ 1kg</h6>
+                      <button type="button" style="border: none; background-color: #9ACD32; border-radius: 5px;" onclick="addToCart('Moong', '200₹ 1kg')">Add to Cart</button>
+                    </div>
+                  </div>
+                  
+                <!-- more products -->
+              
+              </section>
+              <section class="products">
+
+                <!-- It's likely you'll need to link the card somewhere. You could add a button in the info, link the titles, or even wrap the entire card in an <a href="..."> -->
+              
+                <div class="productcard vegetable">
+                  <div class="product-image vegetable2">
+                    <img src="{{ url_for('static', filename='images/ferti11.jpg') }}" width="140px" height="100px">
+                  
+                    <h5>7 DAYS PlantRoot </h5>
+                    <h6>279₹ 1kg</h6>
+                    <button type="button" style="border: none; background-color: #9ACD32; border-radius: 5px;" onclick="addToCart('Moong', '201₹ 1kg')">Add to Cart</button>
+                  </div>
+                </div>
+
+                 <div class="productcard tur">
+                    <div class="product-image tur2">
+                      <img src="{{ url_for('static', filename='images/ferti9.jpg') }}" width="140px" height="100px">
+                   
+                      <h5>OrganoMagicLiquid Soil Booster</h5>
+                      <h6>999₹ 1kg</h6>
+                      <button type="button" style="border: none; background-color: #9ACD32; border-radius: 5px;" onclick="addToCart('Tur', '174₹ 1kg')">Add to Cart</button>
+                    </div>
+                  </div>
+
+                  <div class="productcard fruit">
+                    <div class="product-image fruit1">
+                      <img src="{{ url_for('static', filename='images/fert12.jpg') }}" width="140px" height="100px">
+                   
+                      <h5>Garden GenieRoot PowerBio Fertilizer</h5>
+                      <h6>245₹ 1kg</h6>
+                      <button type="button" style="border: none; background-color: #9ACD32; border-radius: 5px;" onclick="addToCart('Tur', '174₹ 1kg')">Add to Cart</button>
+                    </div>
+                  </div>
+
+                  <div class="productcard fruit">
+                    <div class="product-image fruit2">
+                      <img src="{{ url_for('static', filename='images/ferti13.jpg') }}" width="140px" height="100px">
+                   
+                      <h5> Rooting Powder</h5>
+                      <h6>289₹ 1kg</h6>
+                      <button type="button" style="border: none; background-color: #9ACD32; border-radius: 5px;" onclick="addToCart('Tur', '174₹ 1kg')">Add to Cart</button>
+                    </div>
+                  </div>
+  
+                <!-- more products -->
+              
+              </section>
+
+              </div>
+        </div>
+        <div class="sub3" >
+          <div class="cart"> 
+            <h6>Check Out the Cart </h6><br>
+            <button type="button" style="margin-left: 30px; background-color: rgb(241, 79, 79); border-radius: 5px; width: 90px; font: 30px;">Cart</button>
+          </div>
+          <div class="details">
+              <div class="added"  id="cartDetails">
+               
+               </div>            
+          </div>
+          <button type="button" class="btn btn-primary" style="margin-left: 30px; margin-top: 20px; background-color: rgb(232, 112, 26); border-radius: 5px; width: 90px; font: 30px;" data-toggle="modal" data-target="#exampleModal" onclick="clearCart() ">Buy Now</button>';
+
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                
+              <h3>Order Placed successfully...!!</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      
+            </div>
+          </div>
+        </div>
+        </div>
+      
+      
+<div class="footer">
+    <p>Footer</p>
+  </div>
+
+
+  
+
+ 
+  <script>
+  filterSelection("all");
+ let x1=1;
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("productcard");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      if (x[i].className.indexOf(c) > -1) {
+        x[i].style.display = "block";
+      } else {
+        x[i].style.display = "none";
+      }
+      
+    }
+  }
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].classList.remove("active");
+      this.classList.add("active");
+    });
+  }
+
+  document.getElementById("priceRange").addEventListener("input", function () {
+    document.querySelector(".priceValue").textContent = this.value;
+    filterSelection(document.querySelector(".btn.active").textContent.toLowerCase());
+  });
+
+  var cartItems = [];
+
+// Function to add a product to the cart
+function addToCart(productName, price) {
+  cartItems.push({ name: productName, price: price });
+  updateCartDisplay();
+}
+
+// Function to update the cart display
+function updateCartDisplay() {
+  var cartDetails = document.getElementById("cartDetails");
+  cartDetails.innerHTML = "";
+  var buyNowButton = document.querySelector(".btn-primary");
+  for (var i = 0; i < cartItems.length; i++) {
+    var cartItem = cartItems[i];
+    
+    
+    var itemHtml = `<div class="ad1">
+                      <div class="imgh">
+                        <!-- <img src="images/Tur.jpg" alt="no" width="20px" height="20px">-->
+                      </div>
+                      <div class="text">
+                        <p>${cartItem.name}&nbsp;${cartItem.price}&nbsp;&nbsp;</p>
+                      </div>
+                      <div class="cross">
+                        <button style="border: none; background-color: inherit; font-size: 16px; cursor: pointer; display: inline-block;" onclick="removeFromCart(${i})"><b>X</b></button>
+                      </div>
+                      
+                    </div>`;
+                    buyNowButton.disabled = false; 
+    cartDetails.innerHTML += itemHtml;
+  }
+ 
+  //var i;
+  
+
+}
+
+
+// Function to remove an item f
+// Function to remove a product from the cart
+function removeFromCart(index) {
+  cartItems.splice(index, 1);
+  updateCartDisplay();
+}
+
+// Attach click event listeners to all "Add to Cart" buttons
+var addToCartButtons = document.querySelectorAll(".productcard button");
+addToCartButtons.forEach((button, index) => {
+  button.addEventListener("click", function () {
+    var productCard = this.closest(".productcard");
+    var productName = productCard.querySelector("h5").textContent;
+    var productPrice = productCard.querySelector("h6").textContent;
+    addToCart(productName, productPrice);
+
+  });
+});
+
+ // Function to handle the form submission and add the new product to the products container
+
+ function disableAd1Elements() {
+  const ad1Elements = document.getElementsByClassName("ad1");
+  for (let i = 0; i < ad1Elements.length; i++) {
+    ad1Elements[i].classList.add("disabled");
+  }
+}
+
+function clearCart() {
+  alert("Order placed successfully..!!");
+    cartItems = []; // Empty the cart by reassigning an empty array
+    updateCartDisplay(); // Update cart display after clearing the cart
+    
+   enableBuyNowButton(false); // Disable the "Buy Now" button after clearing the cart
+   
+  }
+  
+// Add event listener to the "Buy Now" button
+
+
+ 
+  </script>
+</body>
+</html>
+
+
